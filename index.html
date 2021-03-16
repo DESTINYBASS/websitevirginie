@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home Vision</title>
+        <link rel="stylesheet" href="Style/style.css">
+        <link rel="stylesheet" href="Style/slideshow.css">
+        <link rel="icon" href="Pictures/Vision logo2.png">
+        <script src="/Scripts/edit.js"></script>
+    </head>
+    <body onload="checkLocalStorage()">
+        <div id="logoDiv">
+            <img src="Pictures/Vision logo.jpg" alt="Vision Logo" id="logo">
+        </div>
+        <header id="MainHeader">
+            <nav id="MainNav">
+                <ul id="MainNavUl">
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <div class="dropdwon">
+                            <script src="/Scripts/dropdown.js"></script>
+						    <button onclick="myFunction()" class="dropbtn">Catalogue</button>
+						    <div id="myDropdown" class="dropdown-content">
+						        <a href="Scripts/hc.html">Housse de couette</a>
+                                <a href="Scripts/hcbu.html">Housse de couette bicolores/unies</a>
+                                <a href="Scripts/dh.html">Draps Housses</a>
+                                <a href="Scripts/dp.html">Drap Plat</a>
+                                <a href="Scripts/taies.html">Taies</a>
+                                <a href="Scripts/cf.html">Collection flanelle</a>
+						    </div>
+                        </div>
+                    </li>
+                    <li><a href="Scripts/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="headerSection">
+                <div class="container">
+                    <div id="ShortInfo">
+                        <p>
+                            Welcome to the official website of VISION home textiles, the specialist in bedlinnen. <br><br>
+                            Bienvenue sur le site officiel de VISION home textiles, le spécialist en linge de lit.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="slideshow">
+                <script src="Scripts/slideshow.js"></script>
+                <div class="container2">
+                    <div class="slides">
+                        <!-- Full-width images with number text -->
+                        <div class="mySlides" id="slide1">
+                            <div class="numbertext">1 / 6</div>
+                            <img src="Pictures/13009 ANNA beige.jpg" style="width:100%">
+                        </div>
+                    
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 6</div>
+                            <img src="Pictures/13011HC.jpg" style="width:100%">
+                        </div>
+                    
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 6</div>
+                            <img src="Pictures/20005 Marco.jpg" style="width:100%">
+                        </div>
+                    
+                        <div class="mySlides">
+                            <div class="numbertext">4 / 6</div>
+                            <img src="Pictures/13083 Tracy ph.jpg" style="width:100%">
+                        </div>
+                    
+                        <div class="mySlides">
+                            <div class="numbertext">5 / 6</div>
+                            <img src="Pictures/13062 Lisa.jpg" style="width:100%">
+                        </div>
+                    
+                        <div class="mySlides">
+                            <div class="numbertext">6 / 6</div>
+                            <img src="Pictures/13063 Arthur.jpg" style="width:100%">
+                        </div>
+                    </div>
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    <!-- Thumbnail images -->
+                    <div class="row">
+                        <div class="column">
+                            <img class="demo cursor" src="Pictures/13009 ANNA beige.jpg" style="width:100%" onclick="currentSlide(1)">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="Pictures/13011HC.jpg" style="width:100%" onclick="currentSlide(2)">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="Pictures/20005 Marco.jpg" style="width:100%" onclick="currentSlide(3)">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="Pictures/13083 Tracy ph.jpg" style="width:100%" onclick="currentSlide(4)">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="Pictures/13062 Lisa.jpg" style="width:100%" onclick="currentSlide(5)">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="Pictures/13063 Arthur.jpg" style="width:100%" onclick="currentSlide(6)">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer>
+            <p>Copyright &copy; 2015-2020</p>
+            <a href="http://emiledeloof.atwebpages.com/">A Website By Emile Deloof</a>
+        </footer>
+        <script>
+            function closeAlert(){
+                var alert = document.getElementById("alert");
+                alert.style.display = "none";
+            }
+        </script>
+    </body>
+</html>

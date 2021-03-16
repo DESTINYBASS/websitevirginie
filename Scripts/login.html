@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="Style/style.css">
+    </head>
+    <body>
+        <div id="logoDiv">
+            <img src="Pictures/Vision logo.jpg" alt="Vision Logo" id="logo">
+        </div>
+        <header id="MainHeader">
+            <nav id="MainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <div class="dropdwon">
+                            <script src="/Scripts/dropdown.js"></script>
+						    <button onclick="myFunction()" class="dropbtn">Catalogue</button>
+						    <div id="myDropdown" class="dropdown-content">
+						        <a href="Scripts/hc.html">Housse de couette</a>
+                                    <a href="Scripts/hcbu.html">Housse de couette bicolores/unies</a>
+                                    <a href="Scripts/dh.html">Draps Housses</a>
+                                    <a href="Scripts/dp.html">Drap Plat</a>
+                                    <a href="Scripts/taies.html">Taies</a>
+                                    <a href="Scripts/cf.html">Collection flanelle</a>
+						    </div>
+                        </div>
+                    </li>
+                    <li><a href="Scripts/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="container">
+                <div id="login">
+                    <script src="/Scripts/edit.js"></script>
+                    <input type="text" id="username" placeholder="Gebruikersnaam" class="inputs">
+                    <input type="password" id="password" placeholder="Wachtwoord" class="inputs">
+                    <input type="submit" id="submit" class="inputs" onclick="login()">
+                </div>
+            </div>
+        </main>        
+        <footer>
+            <p>Copyright &copy; 2015-2020</p>
+            <a href="https://emile-deloof.github.io">A Website By Emile Deloof</a>
+        </footer>
+    </body>
+</html>
